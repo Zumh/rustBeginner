@@ -13,10 +13,13 @@ use std::collections::HashMap;
 
 
 fn main() {
-    println!("### Concurrency ###");
-
+    println!("### Iterators ###");
     
-
-
+    let mut arr_it: [i32; 4] = [1,2,3,4];
+    for val in arr_it.iter(){
+        println!("{}", val);
+    }
+    let mut iter1 = arr_it.iter();
+    println!("1st : {:?}", iter1.next());
 }
 
